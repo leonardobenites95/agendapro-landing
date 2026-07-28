@@ -1,0 +1,46 @@
+import { Check } from "lucide-react";
+import { ScrollReveal } from "./scroll-reveal";
+
+const SOLUTION_POINTS = [
+  "Site institucional profissional, com sua identidade",
+  "Agenda sempre organizada, sem risco de conflito de horário",
+  "Você no controle de cada aprovação",
+];
+
+export function SolutionSection() {
+  return (
+    <section className="section-padding bg-nude-light">
+      <div className="container grid items-center gap-12 md:grid-cols-2">
+        <ScrollReveal>
+          <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+            A solução
+          </span>
+          <h2 className="mt-3 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+            Um sistema pensado para o seu ramo, não adaptado de outro
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            O AgendaPro é um site institucional + sistema de agendamento
+            online, construído para o fluxo real de um pequeno negócio de
+            beleza. A cliente agenda pelo site, a solicitação chega como{" "}
+            <strong className="text-foreground">pendente</strong>, e é você
+            quem aprova. Cada negócio tem sua própria instalação — não é uma
+            conta compartilhada com outros clientes.
+          </p>
+        </ScrollReveal>
+
+        <div className="space-y-4">
+          {SOLUTION_POINTS.map((text, index) => (
+            <ScrollReveal
+              key={text}
+              delay={index * 70}
+              className="flex items-start gap-3 rounded-2xl border border-border/60 bg-card p-4"
+            >
+              <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+              <p className="text-sm text-foreground/80">{text}</p>
+            </ScrollReveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 40% 98%;
+    --foreground: 20 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 20%;
+
+    --primary: 351 30% 51%;
+    --primary-foreground: 30 40% 98%;
+
+    --secondary: 36 33% 90%;
+    --secondary-foreground: 20 15% 20%;
+
+    --muted: 36 30% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 38 42% 68%;
+    --accent-foreground: 20 15% 20%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 25% 88%;
+    --input: 30 25% 88%;
+    --ring: 351 30% 51%;
+
+    --radius: 0.9rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+}

@@ -1,0 +1,12 @@
+# Configuração de deploy no Netlify
+#
+# O Netlify detecta o Next.js automaticamente e instala o runtime necessário
+# para Server Components. Este arquivo apenas fixa o comando de build e a
+# versão do Node.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
