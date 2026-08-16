@@ -19,10 +19,13 @@ const OPTIONS = [
     title: "Conheça o painel administrativo",
     text: "Veja como aprovar agendamentos, cadastrar serviços, configurar horários e administrar a agenda.",
     cta: "Explorar painel",
-    href: `${DEMO_SITE_URL}/admin/login`,
-    // Conta compartilhada só de demonstração, com acesso de escrita total —
-    // qualquer visitante pode alterar dados de outro. Aceitável nesta fase;
-    // reset automático dos dados fica para depois.
+    // Login automático de 1 clique (ver agendapro-demo/src/app/admin/demo-entrar/route.ts)
+    // — sempre a mesma conta fixa de demonstração, cai direto no dashboard.
+    href: `${DEMO_SITE_URL}/admin/demo-entrar`,
+    // Alternativa de entrada manual (ex: se o login automático estiver com
+    // limite de taxa atingido) — mesma conta, escrita total, compartilhada
+    // entre visitantes. Aceitável nesta fase; reset automático dos dados
+    // fica para depois.
     credentials: { email: "demo@agendapro.com.br", password: "MavoraDemo2026!" },
   },
 ] as const;
@@ -46,27 +49,23 @@ export function TryItSection() {
                     <option.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="mt-5 font-mavora text-xl font-semibold">{option.title}</h3>
-                  <p className="mt-3 text-sm text-muted-foreground">{option.text}</p>
+                  <p className="mt-3 flex-1 text-sm text-muted-foreground">{option.text}</p>
 
-                  {option.credentials && (
-                    <div className="mt-4 space-y-1 rounded-xl border border-border/60 bg-secondary/60 px-4 py-3 text-left text-xs">
-                      <p className="font-medium text-foreground/70">Acesso de demonstração</p>
-                      <p className="text-muted-foreground">
-                        E-mail: <span className="font-medium text-foreground">{option.credentials.email}</span>
-                      </p>
-                      <p className="text-muted-foreground">
-                        Senha: <span className="font-medium text-foreground">{option.credentials.password}</span>
-                      </p>
-                    </div>
-                  )}
-
-                  <div className={option.credentials ? "mt-6" : "mt-auto pt-6"}>
+                  <div className="mt-6">
                     <Button size="lg" variant={index === 0 ? "default" : "outline"} className="w-full" asChild>
                       <a href={option.href} target="_blank" rel="noreferrer">
                         {option.cta}
                       </a>
                     </Button>
                     <p className="mt-3 text-xs text-muted-foreground">Abre em uma nova aba.</p>
+
+                    {option.credentials && (
+                      <p className="mt-3 text-xs text-muted-foreground">
+                        Prefere entrar manualmente? Use{" "}
+                        <span className="font-medium text-foreground">{option.credentials.email}</span> /{" "}
+                        <span className="font-medium text-foreground">{option.credentials.password}</span>
+                      </p>
+                    )}
                   </div>
                 </CardContent>
               </Card>
