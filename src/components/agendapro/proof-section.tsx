@@ -7,14 +7,17 @@ const BOOKING_SHOT_SRC: string | undefined = undefined;
 const PANEL_SHOT_SRC: string | undefined = undefined;
 
 const FACTS = [
-  "Sistema real, em uso hoje por um negócio de verdade",
+  "Sistema real, em produção — não é um protótipo",
   "Aprovação manual em cada agendamento, sempre",
 ] as const;
 
 /**
- * Prova social honesta: a MAVORA não é um protótipo — é o mesmo sistema que
- * já roda em produção para o Espaço Karla Marques. Sem depoimentos ou métricas
- * inventadas (não existem ainda) — só o que já é verificável.
+ * Prova social honesta: a MAVORA não é uma maquete — é o mesmo sistema em
+ * produção que você experimenta no painel de demonstração (ver
+ * try-it-section). Sem depoimentos/métricas inventadas nem cliente real
+ * nomeado — a instalação citada antes aqui (Espaço Karla Marques) foi
+ * descontinuada; ajustar este texto de novo quando houver um primeiro
+ * cliente real pra citar por nome.
  */
 export function ProofSection() {
   return (
@@ -23,7 +26,7 @@ export function ProofSection() {
         <SectionHeading
           eyebrow="Já em produção"
           title="Não é uma maquete — é o sistema que já funciona"
-          description="A MAVORA é a mesma base que roda hoje para o Espaço Karla Marques, aprovando agendamentos reais todos os dias."
+          description="A MAVORA é a mesma base de código que roda no painel de demonstração completo — experimente você mesmo, sem espera."
         />
 
         <ScrollReveal delay={80} className="mx-auto mt-10 flex max-w-2xl flex-wrap justify-center gap-3">

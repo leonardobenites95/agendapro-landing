@@ -19,8 +19,12 @@ export function getMavoraWhatsappHref(message?: string): string {
 }
 
 /**
- * Instalação real usada como prova/demonstração ao vivo do sistema
- * (ver product-section/try-it-section). Fica em domínio próprio, separado
- * desta landing comercial.
+ * Instalação usada como demonstração ao vivo do sistema (ver
+ * product-section/try-it-section). Fica em domínio próprio, separado desta
+ * landing comercial — é o tenant fictício "Studio Bella Estética" dentro do
+ * app MAVORA multi-tenant (agendapro-demo), não uma instalação de cliente
+ * real. (Antes apontava pra espaco-karla-marques.netlify.app, uma instalação
+ * single-tenant anterior à transformação multi-tenant, já descontinuada —
+ * o site nem responde mais, 404.)
  */
-export const DEMO_SITE_URL = "https://espaco-karla-marques.netlify.app";
+export const DEMO_SITE_URL = "https://agendapro-demo-generico.netlify.app";
