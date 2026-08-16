@@ -12,7 +12,7 @@ const FACTS = [
 ] as const;
 
 /**
- * Prova social honesta: o AgendaPro não é um protótipo — é o mesmo sistema que
+ * Prova social honesta: a MAVORA não é um protótipo — é o mesmo sistema que
  * já roda em produção para o Espaço Karla Marques. Sem depoimentos ou métricas
  * inventadas (não existem ainda) — só o que já é verificável.
  */
@@ -23,7 +23,7 @@ export function ProofSection() {
         <SectionHeading
           eyebrow="Já em produção"
           title="Não é uma maquete — é o sistema que já funciona"
-          description="O AgendaPro é a mesma base que roda hoje para o Espaço Karla Marques, aprovando agendamentos reais todos os dias."
+          description="A MAVORA é a mesma base que roda hoje para o Espaço Karla Marques, aprovando agendamentos reais todos os dias."
         />
 
         <ScrollReveal delay={80} className="mx-auto mt-10 flex max-w-2xl flex-wrap justify-center gap-3">

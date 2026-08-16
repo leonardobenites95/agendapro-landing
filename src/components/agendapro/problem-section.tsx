@@ -17,7 +17,7 @@ export function ProblemSection() {
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">
             O problema
           </span>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+          <h2 className="mt-3 font-mavora text-3xl font-semibold text-foreground md:text-4xl">
             Reconhece alguma dessas situações?
           </h2>
           <p className="mt-4 max-w-md text-muted-foreground">
@@ -33,7 +33,7 @@ export function ProblemSection() {
               delay={index * 70}
               className="flex items-start gap-4 rounded-2xl border border-border/60 bg-card p-5"
             >
-              <Quote className="mt-0.5 h-4 w-4 shrink-0 text-rose-gold/60" />
+              <Quote className="mt-0.5 h-4 w-4 shrink-0 text-primary/60" />
               <p className="text-sm text-foreground/80">{text}</p>
             </ScrollReveal>
           ))}

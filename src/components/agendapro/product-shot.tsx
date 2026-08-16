@@ -21,17 +21,17 @@ export function ProductShot({ src, alt, caption, priority, className }: ProductS
   return (
     <figure
       className={cn(
-        "overflow-hidden rounded-2xl border border-border/60 bg-card shadow-xl shadow-rose-gold-dark/5",
+        "overflow-hidden rounded-2xl border border-border/60 bg-card shadow-xl shadow-primary/5",
         className
       )}
     >
-      <div className="flex items-center gap-1.5 border-b border-border/60 bg-nude-light/60 px-4 py-3">
-        <span className="h-2.5 w-2.5 rounded-full bg-rose-gold/40" />
-        <span className="h-2.5 w-2.5 rounded-full bg-gold/40" />
-        <span className="h-2.5 w-2.5 rounded-full bg-nude-dark/60" />
+      <div className="flex items-center gap-1.5 border-b border-border/60 bg-secondary/60 px-4 py-3">
+        <span className="h-2.5 w-2.5 rounded-full bg-primary/40" />
+        <span className="h-2.5 w-2.5 rounded-full bg-accent/40" />
+        <span className="h-2.5 w-2.5 rounded-full bg-muted/60" />
       </div>
 
-      <div className="relative aspect-[16/10] w-full bg-beige">
+      <div className="relative aspect-[16/10] w-full bg-secondary">
         {src ? (
           <Image
             src={src}
@@ -43,7 +43,7 @@ export function ProductShot({ src, alt, caption, priority, className }: ProductS
           />
         ) : (
           <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
-            <MonitorSmartphone className="h-8 w-8 text-rose-gold/50" />
+            <MonitorSmartphone className="h-8 w-8 text-primary/50" />
             <p className="text-sm font-medium text-foreground/70">{alt}</p>
             <p className="text-xs text-muted-foreground">
               Captura real do sistema — em preparação

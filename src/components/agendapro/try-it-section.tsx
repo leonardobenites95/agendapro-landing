@@ -24,7 +24,7 @@ const OPTIONS = [
 
 export function TryItSection() {
   return (
-    <section id="experimente" className="section-padding bg-nude-light">
+    <section id="experimente" className="section-padding bg-secondary">
       <div className="container">
         <SectionHeading
           eyebrow="Experimente agora"
@@ -37,10 +37,10 @@ export function TryItSection() {
             <ScrollReveal key={option.title} delay={index * 100}>
               <Card className="flex h-full flex-col">
                 <CardContent className="flex flex-1 flex-col p-8 text-center">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-nude">
-                    <option.icon className="h-6 w-6 text-rose-gold-dark" />
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                    <option.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="mt-5 font-serif text-xl font-semibold">{option.title}</h3>
+                  <h3 className="mt-5 font-mavora text-xl font-semibold">{option.title}</h3>
                   <p className="mt-3 flex-1 text-sm text-muted-foreground">{option.text}</p>
                   <Button size="lg" variant={index === 0 ? "default" : "outline"} className="mt-6" asChild>
                     <a href={option.href} target="_blank" rel="noreferrer">

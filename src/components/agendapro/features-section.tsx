@@ -41,11 +41,11 @@ export function FeaturesSection() {
               delay={(index % 6) * 60}
               className="flex items-start gap-4"
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-nude">
-                <feature.icon className="h-5 w-5 text-rose-gold-dark" />
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <feature.icon className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-serif text-base font-semibold">{feature.title}</h3>
+                <h3 className="font-mavora text-base font-semibold">{feature.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{feature.text}</p>
               </div>
             </ScrollReveal>

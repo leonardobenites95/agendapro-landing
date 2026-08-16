@@ -3,36 +3,42 @@
 @tailwind utilities;
 
 @layer base {
+  /**
+   * Tokens MAVORA (mesmos nomes semânticos e valores do design system do
+   * produto, ver `agendapro-demo/src/app/globals.css` `.mavora-theme`) —
+   * esta landing é 100% institucional, sem conceito de tenant, então os
+   * tokens ficam direto no `:root`, sem precisar de escopo por classe.
+   */
   :root {
-    --background: 30 40% 98%;
-    --foreground: 20 15% 20%;
+    --background: 210 20% 98%;      /* #F9FAFB */
+    --foreground: 240 14% 7%;       /* #0F0F14 */
 
     --card: 0 0% 100%;
-    --card-foreground: 20 15% 20%;
+    --card-foreground: 240 14% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 15% 20%;
+    --popover-foreground: 240 14% 7%;
 
-    --primary: 351 30% 51%;
-    --primary-foreground: 30 40% 98%;
+    --primary: 257 90% 66%;         /* #885CF6 — Mavora Purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 36 33% 90%;
-    --secondary-foreground: 20 15% 20%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 240 14% 7%;
 
-    --muted: 36 30% 94%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%; /* #6B7280 */
 
-    --accent: 38 42% 68%;
-    --accent-foreground: 20 15% 20%;
+    --accent: 330 81% 60%;          /* #EC4899 — Mavora Pink/Accent */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;       /* #EF4444 */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 25% 88%;
-    --input: 30 25% 88%;
-    --ring: 351 30% 51%;
+    --border: 220 13% 91%;          /* #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 257 90% 66%;
 
-    --radius: 0.9rem;
+    --radius: 1rem;
   }
 }
 

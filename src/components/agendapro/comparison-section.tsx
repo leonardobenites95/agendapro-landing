@@ -37,15 +37,15 @@ const ROWS = [
 
 export function ComparisonSection() {
   return (
-    <section id="comparativo" className="section-padding bg-nude-light">
+    <section id="comparativo" className="section-padding bg-secondary">
       <div className="container">
-        <SectionHeading eyebrow="Comparativo" title="Caderno e WhatsApp vs. AgendaPro" />
+        <SectionHeading eyebrow="Comparativo" title="Caderno e WhatsApp vs. MAVORA" />
 
         {/* Mobile: cartões empilhados */}
         <ScrollReveal className="mt-12 space-y-4 md:hidden">
           {ROWS.map((row) => (
             <div key={row.label} className="rounded-2xl border border-border/60 bg-card p-5">
-              <p className="font-serif text-sm font-semibold text-foreground">{row.label}</p>
+              <p className="font-mavora text-sm font-semibold text-foreground">{row.label}</p>
               <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
                 <X className="mt-0.5 h-4 w-4 shrink-0 text-foreground/30" />
                 {row.manual}
@@ -62,18 +62,18 @@ export function ComparisonSection() {
         <ScrollReveal className="mt-12 hidden overflow-x-auto rounded-2xl border border-border/60 bg-card md:block">
           <table className="w-full min-w-[640px] border-collapse text-left text-sm">
             <caption className="sr-only">
-              Comparação entre organizar a agenda manualmente e usar o AgendaPro
+              Comparação entre organizar a agenda manualmente e usar a MAVORA
             </caption>
             <thead>
               <tr className="border-b border-border/60">
-                <th scope="col" className="w-1/3 p-5 font-serif text-base font-semibold text-foreground">
+                <th scope="col" className="w-1/3 p-5 font-mavora text-base font-semibold text-foreground">
                   Aspecto
                 </th>
                 <th scope="col" className="w-1/3 p-5 font-medium text-muted-foreground">
                   Caderno / WhatsApp
                 </th>
-                <th scope="col" className="w-1/3 bg-primary/5 p-5 font-serif text-base font-semibold text-primary">
-                  AgendaPro
+                <th scope="col" className="w-1/3 bg-primary/5 p-5 font-mavora text-base font-semibold text-primary">
+                  MAVORA
                 </th>
               </tr>
             </thead>

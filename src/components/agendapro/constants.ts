@@ -1,18 +1,20 @@
 import { whatsappLink } from "@/lib/utils";
 
 /**
- * WhatsApp comercial do AgendaPro. Configurável via variável de ambiente
- * (NEXT_PUBLIC_AGENDAPRO_WHATSAPP, no Netlify) — enquanto vazio, todo CTA
- * cai no fallback "#contato" (a seção final da própria landing).
+ * WhatsApp comercial da MAVORA. Configurável via variável de ambiente
+ * (NEXT_PUBLIC_MAVORA_WHATSAPP, no Netlify — renomeada de
+ * NEXT_PUBLIC_AGENDAPRO_WHATSAPP no rebranding; nunca esteve configurada em
+ * produção, então a troca de nome não quebra nada) — enquanto vazio, todo
+ * CTA cai no fallback "#contato" (a seção final da própria landing).
  */
-export const AGENDAPRO_WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_AGENDAPRO_WHATSAPP ?? "";
+export const MAVORA_WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_MAVORA_WHATSAPP ?? "";
 
-export const AGENDAPRO_WHATSAPP_CONFIGURED = Boolean(AGENDAPRO_WHATSAPP_NUMBER);
+export const MAVORA_WHATSAPP_CONFIGURED = Boolean(MAVORA_WHATSAPP_NUMBER);
 
 /** Link do WhatsApp comercial, ou "#contato" enquanto o número não existir. */
-export function getAgendaProWhatsappHref(message?: string): string {
-  return AGENDAPRO_WHATSAPP_CONFIGURED
-    ? whatsappLink(AGENDAPRO_WHATSAPP_NUMBER, message)
+export function getMavoraWhatsappHref(message?: string): string {
+  return MAVORA_WHATSAPP_CONFIGURED
+    ? whatsappLink(MAVORA_WHATSAPP_NUMBER, message)
     : "#contato";
 }
 

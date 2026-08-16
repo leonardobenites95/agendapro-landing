@@ -1,3 +1,4 @@
+import { MavoraLogo } from "@/components/mavora/logo";
 import { DEMO_SITE_URL } from "./constants";
 
 const LINKS = [
@@ -17,7 +18,7 @@ export function AgendaProFooter() {
     <footer className="border-t border-border/60 bg-background">
       <div className="container grid gap-10 py-14 sm:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <span className="font-serif text-lg font-semibold text-rose-gold-dark">AgendaPro</span>
+          <MavoraLogo size={28} />
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Sistema de agendamento online e site institucional para negócios
             da área da beleza. Cada cliente possui sua própria instalação.
@@ -62,7 +63,7 @@ export function AgendaProFooter() {
 
       <div className="border-t border-border/60">
         <div className="container py-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} AgendaPro. Todos os direitos reservados.
+          © {new Date().getFullYear()} MAVORA. Todos os direitos reservados.
         </div>
       </div>
     </footer>

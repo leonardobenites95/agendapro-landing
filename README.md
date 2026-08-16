@@ -1,6 +1,6 @@
-# AgendaPro — Landing comercial
+# MAVORA — Landing comercial
 
-Site de vendas do produto AgendaPro (sistema de agendamento online para negócios de beleza). Separado da instalação de qualquer cliente — não lê nenhum banco de dados, é 100% estático.
+Site de vendas do produto MAVORA (antigo "AgendaPro" — nome de marca atualizado; sistema de agendamento online para negócios de beleza). Separado da instalação de qualquer cliente — não lê nenhum banco de dados, é 100% estático.
 
 Stack: Next.js 15 (App Router) · React 19 · TypeScript · Tailwind CSS · shadcn/ui.
 
@@ -19,7 +19,7 @@ Site em [http://localhost:3000](http://localhost:3000).
 | Variável | Obrigatória | Descrição |
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Sim | URL final do site (SEO, sitemap, robots, Open Graph) |
-| `NEXT_PUBLIC_AGENDAPRO_WHATSAPP` | Não | WhatsApp comercial. Sem isso, os CTAs caem em `#contato` |
+| `NEXT_PUBLIC_MAVORA_WHATSAPP` | Não | WhatsApp comercial. Sem isso, os CTAs caem em `#contato` |
 
 ## Capturas reais do sistema
 

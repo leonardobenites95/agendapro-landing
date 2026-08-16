@@ -15,18 +15,18 @@ import { FinalCtaSection } from "@/components/agendapro/final-cta-section";
 import { AgendaProFooter } from "@/components/agendapro/footer";
 
 /**
- * Landing comercial do produto AgendaPro. Site próprio, separado da
+ * Landing comercial do produto MAVORA. Site próprio, separado da
  * instalação de qualquer cliente — usa a instalação real do Espaço Karla
  * Marques só como prova/demonstração ao vivo (ver constants.ts).
  */
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
-  title: "AgendaPro — Agendamento online para negócios de beleza",
+  title: "MAVORA — Agendamento online para negócios de beleza",
   description:
     "Sistema de agendamento online e site institucional para salões, clínicas de estética, barbearias e estúdios de beleza. Você aprova cada horário — o sistema nunca decide sozinho.",
   keywords: [
-    "AgendaPro",
+    "MAVORA",
     "agendamento online",
     "sistema para salão de beleza",
     "sistema para clínica de estética",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "AgendaPro",
-    title: "AgendaPro — Agendamento online para negócios de beleza",
+    siteName: "MAVORA",
+    title: "MAVORA — Agendamento online para negócios de beleza",
     description:
       "Sua agenda, sempre sob o seu controle. Conheça o sistema de agendamento pensado para salões, clínicas, barbearias e estúdios de beleza.",
     images: [
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop",
         width: 1200,
         height: 630,
-        alt: "AgendaPro — agendamento online para negócios de beleza",
+        alt: "MAVORA — agendamento online para negócios de beleza",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AgendaPro — Agendamento online para negócios de beleza",
+    title: "MAVORA — Agendamento online para negócios de beleza",
     description: "Sua agenda, sempre sob o seu controle.",
   },
   robots: { index: true, follow: true },
@@ -63,7 +63,7 @@ export default function AgendaProPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "AgendaPro",
+    name: "MAVORA",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:

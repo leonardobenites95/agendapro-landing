@@ -10,7 +10,7 @@ const STEPS = [
 
 export function HowItWorksSection() {
   return (
-    <section id="como-funciona" className="section-padding bg-beige">
+    <section id="como-funciona" className="section-padding bg-secondary">
       <div className="container">
         <SectionHeading eyebrow="Como funciona" title="Do pedido à confirmação, em 4 passos" />
 
@@ -21,10 +21,10 @@ export function HowItWorksSection() {
           />
           {STEPS.map((step, index) => (
             <ScrollReveal key={step.title} delay={index * 90} className="relative">
-              <span className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-border bg-beige font-serif text-sm font-semibold text-rose-gold-dark">
+              <span className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full border border-border bg-secondary font-mavora text-sm font-semibold text-primary">
                 {index + 1}
               </span>
-              <h3 className="mt-4 font-serif text-base font-semibold">{step.title}</h3>
+              <h3 className="mt-4 font-mavora text-base font-semibold">{step.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{step.text}</p>
             </ScrollReveal>
           ))}

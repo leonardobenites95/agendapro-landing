@@ -11,13 +11,13 @@ const BENEFITS = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="section-padding bg-beige">
+    <section id="beneficios" className="section-padding bg-secondary">
       <div className="container grid gap-12 md:grid-cols-2 md:items-center">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">
             Benefícios
           </span>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+          <h2 className="mt-3 font-mavora text-3xl font-semibold text-foreground md:text-4xl">
             O que muda no seu dia a dia
           </h2>
         </ScrollReveal>

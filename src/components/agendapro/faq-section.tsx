@@ -7,7 +7,7 @@ const FAQ = [
     a: "Não. Todo o conteúdo — textos, fotos, serviços, horários e dados de contato — é editado pelo próprio painel, sem mexer em código.",
   },
   {
-    q: "Meus dados ficam misturados com os de outros clientes do AgendaPro?",
+    q: "Meus dados ficam misturados com os de outros clientes da MAVORA?",
     a: "Não. Cada negócio tem seu próprio site e seus próprios dados — não é um sistema compartilhado.",
   },
   {
@@ -53,7 +53,7 @@ export function FaqSection() {
           {FAQ.map((item, index) => (
             <ScrollReveal key={item.q} delay={index * 50}>
               <details className="group rounded-2xl border border-border/60 bg-card p-5 open:shadow-sm">
-                <summary className="cursor-pointer list-none font-serif text-base font-semibold marker:content-none">
+                <summary className="cursor-pointer list-none font-mavora text-base font-semibold marker:content-none">
                   <span className="flex items-center justify-between gap-4">
                     {item.q}
                     <span className="shrink-0 text-primary transition-transform group-open:rotate-45">

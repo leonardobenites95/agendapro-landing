@@ -24,7 +24,7 @@ export function DifferentiatorsSection() {
   return (
     <section className="section-padding bg-background">
       <div className="container">
-        <SectionHeading eyebrow="Diferenciais" title="Por que escolher o AgendaPro" />
+        <SectionHeading eyebrow="Diferenciais" title="Por que escolher a MAVORA" />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {DIFFERENTIATORS.map((item, index) => (
@@ -33,7 +33,7 @@ export function DifferentiatorsSection() {
               delay={index * 80}
               className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm"
             >
-              <h3 className="font-serif text-lg font-semibold text-rose-gold-dark">{item.title}</h3>
+              <h3 className="font-mavora text-lg font-semibold text-primary">{item.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{item.text}</p>
             </ScrollReveal>
           ))}

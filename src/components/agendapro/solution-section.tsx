@@ -9,17 +9,17 @@ const SOLUTION_POINTS = [
 
 export function SolutionSection() {
   return (
-    <section className="section-padding bg-nude-light">
+    <section className="section-padding bg-secondary">
       <div className="container grid items-center gap-12 md:grid-cols-2">
         <ScrollReveal>
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">
             A solução
           </span>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+          <h2 className="mt-3 font-mavora text-3xl font-semibold text-foreground md:text-4xl">
             Um sistema pensado para o seu ramo, não adaptado de outro
           </h2>
           <p className="mt-4 text-muted-foreground">
-            O AgendaPro é um site institucional + sistema de agendamento
+            A MAVORA é um site institucional + sistema de agendamento
             online, construído para o fluxo real de um pequeno negócio de
             beleza. A cliente agenda pelo site, a solicitação chega como{" "}
             <strong className="text-foreground">pendente</strong>, e é você

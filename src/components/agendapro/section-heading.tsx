@@ -15,7 +15,7 @@ export function SectionHeading({ eyebrow, title, description, className }: Secti
       <span className="text-xs font-semibold uppercase tracking-widest text-primary">
         {eyebrow}
       </span>
-      <h2 className="mt-3 font-serif text-3xl font-semibold text-foreground md:text-4xl">
+      <h2 className="mt-3 font-mavora text-3xl font-semibold text-foreground md:text-4xl">
         {title}
       </h2>
       {description && <p className="mt-4 text-muted-foreground">{description}</p>}

@@ -50,24 +50,18 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Paleta da marca (mesma do produto AgendaPro)
-        "rose-gold": {
-          DEFAULT: "#B76E79",
-          light: "#D9A5AC",
-          dark: "#96525C",
-        },
-        gold: {
-          DEFAULT: "#C9A876",
-          light: "#E5D3B3",
-        },
-        nude: {
-          DEFAULT: "#E8D5C4",
-          light: "#F5EBE0",
-          dark: "#D4B8A0",
-        },
-        beige: {
-          DEFAULT: "#F5F0E8",
-          dark: "#EDE4D3",
+        // Paleta oficial da marca MAVORA (seção 4 do briefing de rebranding).
+        mavora: {
+          purple: "#885CF6",
+          pink: "#EC4899",
+          "soft-pink": "#F472B8",
+          dark: "#0F0F14",
+          charcoal: "#1F1F2E",
+          light: "#F9FAFB",
+          success: "#10B981",
+          warning: "#F59E0B",
+          danger: "#EF4444",
+          info: "#3B82F6",
         },
       },
       borderRadius: {
@@ -77,7 +71,11 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
-        serif: ["var(--font-playfair)", "serif"],
+        // Tipografia institucional MAVORA — usada nos títulos (antes Playfair).
+        mavora: ["var(--font-poppins)", "sans-serif"],
+      },
+      backgroundImage: {
+        "mavora-gradient": "linear-gradient(135deg, #885CF6 0%, #EC4899 100%)",
       },
       keyframes: {
         "fade-up": {

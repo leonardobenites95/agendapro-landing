@@ -12,6 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { MavoraLogo } from "@/components/mavora/logo";
 import { WhatsAppLink } from "./whatsapp-link";
 
 const NAV_LINKS = [
@@ -28,8 +29,8 @@ export function AgendaProHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="font-serif text-xl font-semibold text-rose-gold-dark md:text-2xl">
-          AgendaPro
+        <Link href="/" aria-label="MAVORA">
+          <MavoraLogo size={30} />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -46,7 +47,7 @@ export function AgendaProHeader() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="outline" size="sm" asChild>
-            <WhatsAppLink message="Olá! Quero conhecer o AgendaPro.">
+            <WhatsAppLink message="Olá! Quero conhecer a MAVORA.">
               <MessageCircle className="h-4 w-4" />
               WhatsApp
             </WhatsAppLink>
@@ -64,7 +65,7 @@ export function AgendaProHeader() {
           </SheetTrigger>
           <SheetContent side="right">
             <SheetHeader>
-              <SheetTitle className="font-serif text-rose-gold-dark">AgendaPro</SheetTitle>
+              <SheetTitle className="font-mavora text-primary">MAVORA</SheetTitle>
             </SheetHeader>
             <nav className="mt-8 flex flex-col gap-5">
               {NAV_LINKS.map((link) => (
@@ -81,7 +82,7 @@ export function AgendaProHeader() {
               </SheetClose>
               <SheetClose asChild>
                 <Button variant="outline" asChild>
-                  <WhatsAppLink message="Olá! Quero conhecer o AgendaPro.">
+                  <WhatsAppLink message="Olá! Quero conhecer a MAVORA.">
                     <MessageCircle className="h-4 w-4" />
                     Falar no WhatsApp
                   </WhatsAppLink>
