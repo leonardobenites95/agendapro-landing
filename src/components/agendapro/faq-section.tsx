@@ -8,7 +8,7 @@ const FAQ = [
   },
   {
     q: "Meus dados ficam misturados com os de outros clientes da MAVORA?",
-    a: "Não. Cada negócio tem seu próprio site e seus próprios dados — não é um sistema compartilhado.",
+    a: "Não. Cada negócio tem seu próprio site e seus dados ficam isolados por controle de acesso — nenhum outro cliente da MAVORA consegue ver seus agendamentos, clientes ou configurações.",
   },
   {
     q: "O sistema confirma os agendamentos sozinho?",

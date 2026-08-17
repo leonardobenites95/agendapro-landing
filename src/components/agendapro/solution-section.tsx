@@ -23,8 +23,8 @@ export function SolutionSection() {
             online, construído para o fluxo real de um pequeno negócio de
             beleza. A cliente agenda pelo site, a solicitação chega como{" "}
             <strong className="text-foreground">pendente</strong>, e é você
-            quem aprova. Cada negócio tem sua própria instalação — não é uma
-            conta compartilhada com outros clientes.
+            quem aprova. Seus dados ficam isolados dos de outros negócios —
+            nenhum outro cliente da MAVORA tem acesso a eles.
           </p>
         </ScrollReveal>
 

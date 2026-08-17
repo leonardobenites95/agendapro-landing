@@ -10,7 +10,11 @@ const LINKS = [
 
 const TRY_LINKS = [
   { href: `${DEMO_SITE_URL}/agendar`, label: "Ver agendamento" },
-  { href: `${DEMO_SITE_URL}/admin/login`, label: "Ver painel" },
+  // /admin/demo-entrar (não /admin/login) — login automático de 1 clique,
+  // mesma rota usada em try-it-section.tsx. Levar pro login puro deixaria
+  // quem clica aqui direto (sem passar pela seção "experimente") sem
+  // credencial nenhuma pra usar.
+  { href: `${DEMO_SITE_URL}/admin/demo-entrar`, label: "Ver painel" },
 ];
 
 export function AgendaProFooter() {
@@ -21,7 +25,7 @@ export function AgendaProFooter() {
           <MavoraLogo size={28} />
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Sistema de agendamento online e site institucional para negócios
-            da área da beleza. Cada cliente possui sua própria instalação.
+            da área da beleza. Dados de cada cliente isolados dos demais.
           </p>
         </div>
 

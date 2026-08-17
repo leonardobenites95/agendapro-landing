@@ -5,7 +5,7 @@ const BENEFITS = [
   "Menos tempo perdido organizando horário por mensagem.",
   "Zero risco de marcar duas pessoas no mesmo horário — o sistema trava automaticamente.",
   "Presença profissional online, sem custo de criar um site do zero.",
-  "Seus dados ficam na sua própria instalação, isolados de outros negócios.",
+  "Seus dados ficam isolados dos de outros negócios, com controle de acesso próprio.",
   "Você continua no controle de cada aprovação.",
 ] as const;
 

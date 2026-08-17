@@ -7,8 +7,8 @@ const DIFFERENTIATORS = [
     text: "Diferente de agendas automáticas genéricas, toda solicitação passa por revisão antes de virar compromisso.",
   },
   {
-    title: "Instalação própria, não conta compartilhada",
-    text: "Cada negócio tem seu próprio site e seus próprios dados — nada se mistura com o de outros clientes.",
+    title: "Seu site, seus dados, isolados",
+    text: "Cada negócio tem seu próprio site com sua identidade — seus dados nunca se misturam com os de outros clientes.",
   },
   {
     title: "Configuração sem código",

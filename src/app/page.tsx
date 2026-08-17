@@ -15,9 +15,10 @@ import { FinalCtaSection } from "@/components/agendapro/final-cta-section";
 import { AgendaProFooter } from "@/components/agendapro/footer";
 
 /**
- * Landing comercial do produto MAVORA. Site próprio, separado da
- * instalação de qualquer cliente — usa a instalação real do Espaço Karla
- * Marques só como prova/demonstração ao vivo (ver constants.ts).
+ * Landing comercial do produto MAVORA. Site próprio (deploy separado, sem
+ * banco de dados) — usa o tenant fictício de demonstração do app MAVORA
+ * (multi-tenant) como prova/demonstração ao vivo (ver DEMO_SITE_URL em
+ * constants.ts).
  */
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
