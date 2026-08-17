@@ -19,19 +19,28 @@ export function getMavoraWhatsappHref(message?: string): string {
 }
 
 /**
- * Instalação usada como demonstração ao vivo do sistema (ver
- * product-section/try-it-section). Fica em domínio próprio, separado desta
- * landing comercial — é o tenant fictício "Studio Bella Estética" dentro do
- * app MAVORA multi-tenant (agendapro-demo), não uma instalação de cliente
- * real. (Antes apontava pra espaco-karla-marques.netlify.app, uma instalação
- * single-tenant anterior à transformação multi-tenant, já descontinuada —
- * o site nem responde mais, 404.)
+ * Instalação usada como demonstração ao vivo do sistema — o tenant fictício
+ * "Studio Bella Estética" dentro do app MAVORA multi-tenant (agendapro-demo),
+ * nunca uma instalação de cliente real. Usada SÓ pelos CTAs de demonstração
+ * (try-it-section: "Faça um agendamento como cliente" / "Conheça o painel
+ * administrativo") — nunca pelo CTA de cadastro, mesmo que hoje aponte pro
+ * mesmo host em produção (ver MAVORA_APP_URL abaixo: são conceitos
+ * diferentes, propositalmente separados, mesmo com o mesmo valor default).
+ * Configurável por env pra testar localmente contra uma instância própria,
+ * sem afetar o valor real em produção (env var nunca definida lá).
  */
-// Configurável por env pra permitir testar localmente contra um
-// agendapro-demo rodando na própria máquina (ex: `npm run dev` em
-// localhost:3000) sem apontar os CTAs de teste pro site de produção — em
-// produção a env var nunca é definida, então o valor real não muda.
 export const DEMO_SITE_URL = process.env.NEXT_PUBLIC_DEMO_SITE_URL ?? "https://agendapro-demo-generico.netlify.app";
 
-/** Cadastro self-service (Smart Onboarding Comercial MVP) — vive no mesmo app multi-tenant do DEMO_SITE_URL, rota pública `/cadastro`. */
-export const SIGNUP_URL = `${DEMO_SITE_URL}/cadastro`;
+/**
+ * URL base da aplicação MAVORA (agendapro-demo) — usada pelos CTAs de
+ * cadastro ("Criar conta grátis"/"Quero testar grátis"), nunca pelos de
+ * demonstração (esses usam DEMO_SITE_URL). Hoje aponta pro mesmo host que
+ * DEMO_SITE_URL em produção (é o mesmo deploy multi-tenant que hospeda tanto
+ * o tenant de demonstração quanto o cadastro público) — mas são variáveis
+ * independentes de propósito, pra nunca acoplar "onde fica a demo" a "onde
+ * fica o cadastro" caso um dia sejam hosts diferentes.
+ */
+export const MAVORA_APP_URL = process.env.NEXT_PUBLIC_MAVORA_APP_URL ?? "https://agendapro-demo-generico.netlify.app";
+
+/** Cadastro self-service (Smart Onboarding Comercial MVP) — rota pública `/cadastro` dentro de MAVORA_APP_URL. */
+export const SIGNUP_URL = `${MAVORA_APP_URL}/cadastro`;
