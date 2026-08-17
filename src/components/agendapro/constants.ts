@@ -27,7 +27,11 @@ export function getMavoraWhatsappHref(message?: string): string {
  * single-tenant anterior à transformação multi-tenant, já descontinuada —
  * o site nem responde mais, 404.)
  */
-export const DEMO_SITE_URL = "https://agendapro-demo-generico.netlify.app";
+// Configurável por env pra permitir testar localmente contra um
+// agendapro-demo rodando na própria máquina (ex: `npm run dev` em
+// localhost:3000) sem apontar os CTAs de teste pro site de produção — em
+// produção a env var nunca é definida, então o valor real não muda.
+export const DEMO_SITE_URL = process.env.NEXT_PUBLIC_DEMO_SITE_URL ?? "https://agendapro-demo-generico.netlify.app";
 
 /** Cadastro self-service (Smart Onboarding Comercial MVP) — vive no mesmo app multi-tenant do DEMO_SITE_URL, rota pública `/cadastro`. */
 export const SIGNUP_URL = `${DEMO_SITE_URL}/cadastro`;
