@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sheet";
 import { MavoraLogo } from "@/components/mavora/logo";
 import { WhatsAppLink } from "./whatsapp-link";
+import { SIGNUP_URL } from "./constants";
 
 const NAV_LINKS = [
   { href: "#problema", label: "O problema" },
@@ -47,13 +48,10 @@ export function AgendaProHeader() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="outline" size="sm" asChild>
-            <WhatsAppLink message="Olá! Quero conhecer a MAVORA.">
-              <MessageCircle className="h-4 w-4" />
-              WhatsApp
-            </WhatsAppLink>
+            <a href="#experimente">Ver demonstração</a>
           </Button>
           <Button size="sm" asChild>
-            <a href="#experimente">Ver demonstração</a>
+            <a href={SIGNUP_URL}>Criar conta grátis</a>
           </Button>
         </div>
 
@@ -77,6 +75,11 @@ export function AgendaProHeader() {
               ))}
               <SheetClose asChild>
                 <Button asChild className="mt-4">
+                  <a href={SIGNUP_URL}>Criar conta grátis</a>
+                </Button>
+              </SheetClose>
+              <SheetClose asChild>
+                <Button variant="outline" asChild>
                   <a href="#experimente">Ver demonstração</a>
                 </Button>
               </SheetClose>

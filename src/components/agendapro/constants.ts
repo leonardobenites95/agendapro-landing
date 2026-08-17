@@ -28,3 +28,6 @@ export function getMavoraWhatsappHref(message?: string): string {
  * o site nem responde mais, 404.)
  */
 export const DEMO_SITE_URL = "https://agendapro-demo-generico.netlify.app";
+
+/** Cadastro self-service (Smart Onboarding Comercial MVP) — vive no mesmo app multi-tenant do DEMO_SITE_URL, rota pública `/cadastro`. */
+export const SIGNUP_URL = `${DEMO_SITE_URL}/cadastro`;

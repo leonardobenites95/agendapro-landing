@@ -2,6 +2,7 @@ import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProductShot } from "./product-shot";
 import { WhatsAppLink } from "./whatsapp-link";
+import { SIGNUP_URL } from "./constants";
 
 /** Trocar por "/images/painel-agenda.png" assim que a captura real existir — o layout não muda. */
 const HERO_SHOT_SRC: string | undefined = undefined;
@@ -31,18 +32,24 @@ export function HeroSection() {
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
-              <WhatsAppLink message="Olá! Quero conhecer a MAVORA.">
-                <MessageCircle className="h-5 w-5" />
-                Falar no WhatsApp agora
-              </WhatsAppLink>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#como-funciona">
-                Ver como funciona
+              <a href={SIGNUP_URL}>
+                Criar conta grátis
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
+            <Button size="lg" variant="outline" asChild>
+              <WhatsAppLink message="Olá! Quero conhecer a MAVORA.">
+                <MessageCircle className="h-5 w-5" />
+                Falar no WhatsApp
+              </WhatsAppLink>
+            </Button>
           </div>
+          <a
+            href="#como-funciona"
+            className="mt-4 inline-block text-sm font-medium text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+          >
+            Ver como funciona
+          </a>
         </div>
 
         <div className="animate-fade-in [animation-delay:150ms]">
