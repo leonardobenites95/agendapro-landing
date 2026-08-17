@@ -1,8 +1,9 @@
 # Configuração de deploy no Netlify
 #
-# O Netlify detecta o Next.js automaticamente e instala o runtime necessário
-# para Server Components. Este arquivo apenas fixa o comando de build e a
-# versão do Node.
+# Plugin declarado explicitamente (achado na migração de conta: a
+# auto-detecção do painel não instalou o runtime do Next.js neste site,
+# diferente do agendapro-demo — toda rota respondia 404. Declarar aqui é
+# mais robusto, não depende de detecção automática do painel).
 
 [build]
   command = "npm run build"
@@ -10,3 +11,6 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
