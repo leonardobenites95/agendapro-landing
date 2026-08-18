@@ -19,9 +19,9 @@ const ROWS = [
     agendapro: "Histórico completo, sempre acessível",
   },
   {
-    label: "Aprovação do agendamento",
+    label: "Confirmação do agendamento",
     manual: "Manual, por mensagem, um a um",
-    agendapro: "Você aprova pelo painel, em um clique",
+    agendapro: "Confirma automaticamente — ou você aprova pelo painel, se preferir",
   },
   {
     label: "Presença profissional online",

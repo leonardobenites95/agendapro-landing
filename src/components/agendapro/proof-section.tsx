@@ -8,7 +8,7 @@ const PANEL_SHOT_SRC: string | undefined = "/images/painel-agenda.png";
 
 const FACTS = [
   "Sistema real, em produção — não é um protótipo",
-  "Aprovação manual em cada agendamento, sempre",
+  "Confirmação automática, com aprovação manual quando você quiser",
 ] as const;
 
 /**

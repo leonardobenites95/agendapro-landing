@@ -6,7 +6,7 @@ const BENEFITS = [
   "Zero risco de marcar duas pessoas no mesmo horário — o sistema trava automaticamente.",
   "Presença profissional online, sem custo de criar um site do zero.",
   "Seus dados ficam isolados dos de outros negócios, com controle de acesso próprio.",
-  "Você continua no controle de cada aprovação.",
+  "Confirmação automática por padrão, com aprovação manual disponível quando quiser.",
 ] as const;
 
 export function BenefitsSection() {

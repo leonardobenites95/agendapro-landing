@@ -3,8 +3,8 @@ import { SectionHeading } from "./section-heading";
 
 const DIFFERENTIATORS = [
   {
-    title: "Você aprova, o sistema não decide sozinho",
-    text: "Diferente de agendas automáticas genéricas, toda solicitação passa por revisão antes de virar compromisso.",
+    title: "Confirma sozinho, ou só quando você aprovar",
+    text: "Agendamentos confirmam automaticamente por padrão — mas cada profissional pode preferir revisar antes, e o sistema se ajusta.",
   },
   {
     title: "Seu site, seus dados, isolados",

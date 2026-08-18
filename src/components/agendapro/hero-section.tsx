@@ -25,9 +25,9 @@ export function HeroSection() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-md text-base text-muted-foreground md:text-lg lg:mx-0">
-            A MAVORA organiza os agendamentos do seu salão, clínica ou
-            estúdio — mas quem decide continua sendo você. Nenhuma
-            solicitação é confirmada sozinha.
+            A MAVORA confirma os agendamentos do seu salão, clínica ou
+            estúdio automaticamente — e você liga a aprovação manual
+            sempre que preferir revisar antes de confirmar.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">

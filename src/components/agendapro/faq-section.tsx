@@ -12,7 +12,7 @@ const FAQ = [
   },
   {
     q: "O sistema confirma os agendamentos sozinho?",
-    a: "Não. Toda solicitação feita pelo site chega como pendente. Você decide aprovar, recusar ou reagendar.",
+    a: "Sim, por padrão. Se preferir revisar antes, você liga a aprovação manual pelo painel — aí cada solicitação chega como pendente até você aprovar, recusar ou reagendar.",
   },
   {
     q: "Funciona bem no celular?",

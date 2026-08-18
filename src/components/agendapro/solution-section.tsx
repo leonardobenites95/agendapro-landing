@@ -4,7 +4,7 @@ import { ScrollReveal } from "./scroll-reveal";
 const SOLUTION_POINTS = [
   "Site institucional profissional, com sua identidade",
   "Agenda sempre organizada, sem risco de conflito de horário",
-  "Você no controle de cada aprovação",
+  "Confirmação automática, com aprovação manual quando você quiser",
 ];
 
 export function SolutionSection() {
@@ -21,9 +21,10 @@ export function SolutionSection() {
           <p className="mt-4 text-muted-foreground">
             A MAVORA é um site institucional + sistema de agendamento
             online, construído para o fluxo real de um pequeno negócio de
-            beleza. A cliente agenda pelo site, a solicitação chega como{" "}
-            <strong className="text-foreground">pendente</strong>, e é você
-            quem aprova. Seus dados ficam isolados dos de outros negócios —
+            beleza. A cliente agenda pelo site e o horário{" "}
+            <strong className="text-foreground">confirma automaticamente</strong> —
+            ou fica pendente pra você aprovar, se preferir revisar antes.
+            Seus dados ficam isolados dos de outros negócios —
             nenhum outro cliente da MAVORA tem acesso a eles.
           </p>
         </ScrollReveal>

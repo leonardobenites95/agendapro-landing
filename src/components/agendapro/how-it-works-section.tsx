@@ -3,8 +3,8 @@ import { SectionHeading } from "./section-heading";
 
 const STEPS = [
   { title: "Cliente acessa o site", text: "Escolhe um ou mais serviços, a data e um horário realmente disponível." },
-  { title: "Solicitação fica pendente", text: "Você recebe uma notificação — nada é confirmado automaticamente." },
-  { title: "Você aprova pelo painel", text: "Aprovar, recusar ou reagendar em um clique, com atalho pronto para o WhatsApp." },
+  { title: "Horário confirma na hora", text: "Por padrão, a MAVORA confirma o agendamento automaticamente, sem esperar aprovação." },
+  { title: "Prefere revisar? Você decide", text: "Ative a aprovação manual quando quiser revisar cada solicitação antes de confirmar, no seu ritmo." },
   { title: "Horário fica reservado", text: "O sistema trava o horário automaticamente — impossível haver conflito." },
 ] as const;
 

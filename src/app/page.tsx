@@ -25,7 +25,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 export const metadata: Metadata = {
   title: "MAVORA — Agendamento online para negócios de beleza",
   description:
-    "Sistema de agendamento online e site institucional para salões, clínicas de estética, barbearias e estúdios de beleza. Você aprova cada horário — o sistema nunca decide sozinho.",
+    "Sistema de agendamento online e site institucional para salões, clínicas de estética, barbearias e estúdios de beleza. Agendamentos confirmam automaticamente — com aprovação manual disponível quando você preferir revisar antes.",
   keywords: [
     "MAVORA",
     "agendamento online",

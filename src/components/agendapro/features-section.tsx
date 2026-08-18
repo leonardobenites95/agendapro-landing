@@ -16,7 +16,7 @@ import { SectionHeading } from "./section-heading";
 
 const FEATURES = [
   { icon: CalendarDays, title: "Agendamento online", text: "Serviço, data e horário — disponível 24 horas, sem precisar ligar." },
-  { icon: ShieldCheck, title: "Aprovação manual", text: "Nenhuma solicitação confirma sozinha. Você aprova, recusa ou reagenda." },
+  { icon: ShieldCheck, title: "Confirmação flexível", text: "Confirma automaticamente por padrão — ou você aprova, recusa ou reagenda cada solicitação, se preferir." },
   { icon: LayoutDashboard, title: "Painel administrativo", text: "Dashboard do dia, agenda com filtros, clientes com histórico completo." },
   { icon: Scissors, title: "Cadastro de serviços", text: "Nome, duração, preço e foto — tudo editável, sem programador." },
   { icon: Clock, title: "Gestão de horários", text: "Turnos por dia da semana, intervalo entre horários e bloqueio de datas." },
