@@ -2,9 +2,9 @@ import { ScrollReveal } from "./scroll-reveal";
 import { ProductShot } from "./product-shot";
 import { SectionHeading } from "./section-heading";
 
-/** Trocar pelos caminhos reais em public/images/ assim que as capturas existirem — o layout não muda. */
-const BOOKING_SHOT_SRC: string | undefined = undefined;
-const PANEL_SHOT_SRC: string | undefined = undefined;
+/** Capturas reais do sistema (tenant de demonstração, dados fictícios). */
+const BOOKING_SHOT_SRC: string | undefined = "/images/agendamento-cliente.png";
+const PANEL_SHOT_SRC: string | undefined = "/images/painel-agenda.png";
 
 const FACTS = [
   "Sistema real, em produção — não é um protótipo",

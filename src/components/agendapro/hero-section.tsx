@@ -4,8 +4,8 @@ import { ProductShot } from "./product-shot";
 import { WhatsAppLink } from "./whatsapp-link";
 import { SIGNUP_URL } from "./constants";
 
-/** Trocar por "/images/painel-agenda.png" assim que a captura real existir — o layout não muda. */
-const HERO_SHOT_SRC: string | undefined = undefined;
+/** Captura real do painel administrativo (tenant de demonstração, dados fictícios). */
+const HERO_SHOT_SRC: string | undefined = "/images/painel-agenda.png";
 
 export function HeroSection() {
   return (
