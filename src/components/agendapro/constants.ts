@@ -44,3 +44,34 @@ export const MAVORA_APP_URL = process.env.NEXT_PUBLIC_MAVORA_APP_URL ?? "https:/
 
 /** Cadastro self-service (Smart Onboarding Comercial MVP) — rota pública `/cadastro` dentro de MAVORA_APP_URL. */
 export const SIGNUP_URL = `${MAVORA_APP_URL}/cadastro`;
+
+/**
+ * Vitrine oficial dos 3 tenants demo por segmento (ver
+ * agendapro-demo/src/services/demo-tenants/specs/) — cada um roda no seu
+ * próprio subdomínio (PLATFORM_BASE_DOMAIN = mavorapro.com.br), confirmado
+ * ao vivo em produção em 24/08/2026 (HTTP 200, título correto nos 3). Usada
+ * pelo seletor de segmento em try-it-section.tsx. O tenant antigo único
+ * (DEMO_SITE_URL acima, "Studio Bella Estética") continua existindo no
+ * banco e ainda é usado pelo footer, mas deixou de ser a vitrine comercial
+ * principal.
+ */
+export const SEGMENT_DEMOS = [
+  {
+    slug: "studio-lumiere",
+    segment: "Salão de Beleza",
+    businessName: "Studio Lumière",
+    url: process.env.NEXT_PUBLIC_DEMO_SALAO_URL ?? "https://studio-lumiere.mavorapro.com.br",
+  },
+  {
+    slug: "barbearia-north",
+    segment: "Barbearia",
+    businessName: "Barbearia North",
+    url: process.env.NEXT_PUBLIC_DEMO_BARBEARIA_URL ?? "https://barbearia-north.mavorapro.com.br",
+  },
+  {
+    slug: "aura-estetica",
+    segment: "Estética",
+    businessName: "Aura Estética",
+    url: process.env.NEXT_PUBLIC_DEMO_ESTETICA_URL ?? "https://aura-estetica.mavorapro.com.br",
+  },
+] as const;
